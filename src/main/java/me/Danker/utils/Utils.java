@@ -111,9 +111,9 @@ public class Utils {
 	public static boolean isOnHypixel() {
 		Minecraft mc = Minecraft.getMinecraft();
 		if (mc != null && mc.theWorld != null && !mc.isSingleplayer()) {
-			return mc.getCurrentServerData().serverIP.toLowerCase().contains("hypixel");
+			return mc.getCurrentServerData().serverIP.toLowerCase().contains("fakepixel");
 		}
-		return false;
+		return true;
 	}
 
 	public static void checkForSkyblock() {
@@ -128,7 +128,7 @@ public class Utils {
 				}
 			}
 		}
-		inSkyblock = false;
+		inSkyblock = true;
 	}
 
 	public static void checkForDungeons() {

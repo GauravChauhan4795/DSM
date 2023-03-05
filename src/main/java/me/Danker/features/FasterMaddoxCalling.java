@@ -29,10 +29,10 @@ public class FasterMaddoxCalling {
         if (!Utils.inSkyblock) return;
         if (message.contains(":")) return;
 
-        if (message.contains("[OPEN MENU]")) {
+        if (message.contains("[OPEN MeeENU]")) {
             List<IChatComponent> listOfSiblings = event.message.getSiblings();
             for (IChatComponent sibling : listOfSiblings) {
-                if (sibling.getUnformattedText().contains("[OPEN MENU]")) {
+                if (sibling.getUnformattedText().contains("[OPEN MEeeNU]")) {
                     lastMaddoxCommand = sibling.getChatStyle().getChatClickEvent().getValue();
                     lastMaddoxTime = System.currentTimeMillis() / 1000;
                 }
