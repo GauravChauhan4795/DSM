@@ -57,6 +57,8 @@ sourceSets {
 
 repositories {
     maven("https://repo.polyfrost.cc/releases")
+    maven("https://plugins.gradle.org/m2/")
+    maven("https://maven.architectury.dev/")
 }
 
 dependencies {
